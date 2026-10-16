@@ -5,7 +5,7 @@ sus repositorios más recientes, un resumen de los lenguajes más usados, y perm
 paginar los resultados con el botón "Cargar más".
 
 ## 🚀 Enlace al sitio publicado
-[https://licht-byte.github.io/buscador-github/](https://licht-byte.github.io/buscador-github/)
+[https://lich-byte.github.io/buscador-github/](https://lich-byte.github.io/buscador-github/)
 
 ## 🛠️ Tecnologías usadas
 - HTML5
