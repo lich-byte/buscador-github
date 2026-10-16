@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de perfiles GitHub</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 2rem auto; }
+        .perfil { display: flex; gap: 1rem; align-items: center; }
+        .perfil img { width: 96px; border-radius: 50%; }
+        .error { color: crimson; }
+        .oculto { display: none; }
+        footer { margin-top: 2rem; font-size: 0.9em; color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Buscador de perfiles GitHub</h1>
+    <form id="form-buscar">
+        <input type="text" id="input-usuario" placeholder="Usuario" required>
+        <button type="submit" id="btn-buscar">Buscar</button>
+        <label for="select-orden">Ordenar por:</label>
+        <select id="select-orden">
+            <option value="updated">Última actualización</option>
+            <option value="full_name">Nombre</option>
+        </select>
+    </form>
+    <p id="estado"></p>
+
+    <section id="perfil" class="perfil oculto"></section>
+    <h2 id="titulo-repos" class="oculto">Repositorios recientes</h2>
+    <ul id="repos"></ul>
+
+    <!-- Botón para cargar más repositorios -->
+    <button id="btn-cargar-mas" class="oculto">Cargar más</button>
+
+    <!-- Contenedor para el resumen de lenguajes -->
+    <div id="resumen-lenguajes" class="oculto">
+        <h3>Lenguajes más usados</h3>
+        <ul id="lista-lenguajes"></ul>
+    </div>
+    
+    <!-- Pie de página para mostrar las peticiones restantes -->
+    <footer>
+        <p id="peticiones-restantes"></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
